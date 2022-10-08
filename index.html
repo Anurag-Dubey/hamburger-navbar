@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Full Screen Menu</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container"></div>
+
+        <img src="images/menu.png" id="menuIcon">
+        <div class="menubox" id="menu-box">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+        </div>
+
+        <script>
+            let menubox = document.getElementById("menu-box");
+            let  menuIcon = document.getElementById("menuIcon");
+
+            menuIcon.onclick = function(){
+                menubox.classList.toggle("open-menu");
+
+                if(menubox.classList.contains("open-menu")){
+                    menuIcon.src="images/close.png";
+                }
+                else{
+                    menuIcon.src="images/menu.png";
+                }
+            }
+
+
+
+
+
+        </script>
+
+
+
+        
+
+
+
+
+    </body>
+</html>
